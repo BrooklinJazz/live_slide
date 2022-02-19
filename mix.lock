@@ -1,0 +1,3 @@
+%{
+  "kino": {:git, "https://github.com/livebook-dev/kino.git", "976a9711b83e24d29616b75384378c6ff26f4b5e", []},
+}
