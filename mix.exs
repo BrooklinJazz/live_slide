@@ -23,7 +23,8 @@ defmodule LiveSlide.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:kino, "~> 0.5.2"}
+      {:kino, "~> 0.5.2"},
+      {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
     ]
   end
 

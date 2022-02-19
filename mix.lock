@@ -1,3 +1,3 @@
 %{
-  "kino": {:git, "https://github.com/livebook-dev/kino.git", "976a9711b83e24d29616b75384378c6ff26f4b5e", []},
+  "kino": {:hex, :kino, "0.5.2", "42716edc9e41f17325f81a30985f81366cc673dfa5c559f58b8d7f8560b62212", [:mix], [{:ecto, "~> 3.0", [hex: :ecto, repo: "hexpm", optional: true]}, {:vega_lite, "~> 0.1.0", [hex: :vega_lite, repo: "hexpm", optional: true]}], "hexpm", "0911fb49ea6a26b4ac2ee10a075d9a08f5c8e5b5b9bbd385b7fb06f811c9949b"},
 }
