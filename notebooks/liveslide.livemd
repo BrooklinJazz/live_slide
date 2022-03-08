@@ -1,0 +1,71 @@
+# LiveSlide
+
+## Installation
+
+You can install `LiveSlide` as a dependency in your project.
+
+I'm personally prone to using the
+github url so that I don't have to manually update for changes.
+
+```elixir
+# Mix.install([{:live_slide, github: "brooklinjazz/live_slide"}])
+Mix.install([{:live_slide, path: ""}])
+```
+
+However you can also use hex versions.
+
+<!-- livebook:{"force_markdown":true} -->
+
+```elixir
+Mix.install([{:live_slide, "~> 0. 1"}])
+```
+
+## Sequences
+
+`LiveSlide` accepts a list, and creates a numbered button for each value in the list.
+
+```elixir
+LiveSlide.new(["a", "b", "c", "d", "e"])
+```
+
+## Markdown
+
+You can return Markdown with the `Kino.Markdown` library.
+
+```elixir
+LiveSlide.new([Kino.Markdown.new("## header 2")])
+```
+
+Meaning you can display Elixir cells.
+
+````elixir
+elixir_cell = Kino.Markdown.new("
+```elixir
+1 + 1
+```
+")
+LiveSlide.new([elixir_cell])
+````
+
+## LiveSlide.elixir
+
+A utility function for creating Elixir examples in markdown.
+
+```elixir
+LiveSlide.elixir("1 + 1")
+```
+
+Often it's useful to have a single code example with a title.
+
+```elixir
+LiveSlide.elixir("Title of the elixir cell", "2 + 2")
+```
+
+```elixir
+LiveSlide.new([
+  LiveSlide.elixir("slide 1", "1 + 1"),
+  LiveSlide.elixir("slide 2", "2 + 2"),
+  LiveSlide.elixir("slide 3", "3 + 3"),
+  LiveSlide.elixir("slide 4", "4 + 4")
+])
+```

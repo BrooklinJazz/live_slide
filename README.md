@@ -1,18 +1,15 @@
 # LiveSlide
 
-**TODO: Add description**
+**A Slide Show For Livebook**
+
+This project is highly experimental and should only be used for sake of experiment and example.
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `live_slide` to your list of dependencies in `mix.exs`:
+add `live_slide` to your list of dependencies in the livebook.
 
 ```elixir
-def deps do
-  [
-    {:live_slide, "~> 0.1.0"}
-  ]
-end
+Mix.install([{:live_slide, github: "brooklinjazz/live_slide"}])
 ```
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
