@@ -23,13 +23,13 @@ defmodule LiveSlide.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:kino, "~> 0.5.2"},
+      {:kino, github: "livebook-dev/kino"},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
     ]
   end
 
   defp description() do
-    "A custom Kino slide component for livebook"
+    "A custom Kino slide widget for livebook"
   end
 
   def package do
