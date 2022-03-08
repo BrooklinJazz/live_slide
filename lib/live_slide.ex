@@ -59,7 +59,6 @@ defmodule LiveSlide do
     """
 
     export function init(ctx, slide_count) {
-      ctx.importCSS("main.css");
       ctx.importCSS("/css/app.css");
 
       for (let i = 0; i < slide_count; i++) {
