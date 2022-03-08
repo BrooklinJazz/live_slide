@@ -47,25 +47,3 @@ elixir_cell = Kino.Markdown.new("
 LiveSlide.new([elixir_cell])
 ````
 
-## LiveSlide.elixir
-
-A utility function for creating Elixir examples in markdown.
-
-```elixir
-LiveSlide.elixir("1 + 1")
-```
-
-Often it's useful to have a single code example with a title.
-
-```elixir
-LiveSlide.elixir("Title of the elixir cell", "2 + 2")
-```
-
-```elixir
-LiveSlide.new([
-  LiveSlide.elixir("slide 1", "1 + 1"),
-  LiveSlide.elixir("slide 2", "2 + 2"),
-  LiveSlide.elixir("slide 3", "3 + 3"),
-  LiveSlide.elixir("slide 4", "4 + 4")
-])
-```

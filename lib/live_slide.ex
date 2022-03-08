@@ -17,23 +17,6 @@ defmodule LiveSlide do
     Kino.JS.Live.new(__MODULE__, %{slides: slides, frame: frame})
   end
 
-  @doc """
-  Highlight text as an elixir cell in markdown.
-
-  ## Examples
-
-    iex> %Kino.Markdown{} = LiveSlide.elixir("1 + 1")
-    iex> %Kino.Markdown{} = LiveSlide.elixir("title", "1 + 1")
-  """
-  def elixir(title \\ "", string) do
-    Kino.Markdown.new("
-#{title}
-```elixir
-#{string}
-```
-    ")
-  end
-
   @impl true
   def init(%{slides: slides, frame: frame}, ctx) do
     {:ok, assign(ctx, slides: slides, frame: frame)}
